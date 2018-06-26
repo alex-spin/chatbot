@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://cdn.botframework.com/botframework-webchat/latest/botchat.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="bot"/>
+    <script src="https://cdn.botframework.com/botframework-webchat/latest/botchat.js"></script>
+    <script>
+        const params = BotChat.queryParams(location.search);
+      const bot = {
+          id: params['botid'] || 'botid',
+          name: params['botname'] || 'botname'
+      };
+
+      BotChat.App({
+        directLine: { secret: 'yVqRnJRGX8Y.cwA.OTM.wzsWnlE8YWCs-ctisazlzVTdr7cxwkTpAt7A8P8newU' },
+        locale: params['locale'],
+        user: { id: 'userid' },
+        bot: bot,
+        resize: 'detect'
+      }, document.getElementById("bot"));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+{
+    "name": "DH",
+    "description": "",
+    "secretKey": "",
+    "services": [
+        {
+            "appId": "",
+            "id": "e0140ef0-75ed-11e8-9f83-a7fb0a727f12",
+            "type": "endpoint",
+            "appPassword": "",
+            "endpoint": "http://localhost:3978/api/messages",
+            "name": "http://localhost:3978/api/messages"
+        }
+    ]
+}
